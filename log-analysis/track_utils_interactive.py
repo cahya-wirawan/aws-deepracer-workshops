@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 
 class DeepRacerTrack:
-    def __init__(self, df, track_name):
+    def __init__(self, track_name, df):
         self.df = df
         self.track_name = track_name
         self.episodes_per_iteration = df[df['iteration']==1]['episode'].max()+1
